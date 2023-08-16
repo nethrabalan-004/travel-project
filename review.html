@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      .nav
+    {
+        display: flex;
+        gap: 40px;
+        margin: 0px;
+        margin-top: -20px;
+        margin-left: -10px;
+        background-color: rgba(0, 183, 255, 0.329);
+        padding: 20px;
+        box-shadow: 5px 5px 25px black;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+    }
+    .link
+    {
+        /* border: 3px solid rgba(0, 0, 0, 0.144); */
+        width: auto;
+        border-radius: 60px;
+        border: 3px solid rgb(252, 252, 252);
+        padding: 20px;
+        margin-left: 20px;
+        font-size: xx-large;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.158);
+        box-shadow: 10px 10px 25px aqua;
+    }
+    .link:hover
+    {
+        background-color: black;
+            color: aqua;
+        border-radius: 60px;
+        box-shadow: 10px 10px 25px rgb(227, 229, 231);
+      
+        transition: 0.5s;
+    }
+    .img1
+    {
+        border-radius: 10px;
+        animation: logo 1s;
+        height: 150px;
+        margin-left: 20px;
+    }
+    @keyframes logo
+    {
+       
+        40%{transform: translateY(40px);}
+        80%{transform: translateY(-20px);}
+        100%{transform: translateY(0px);}
+    }
+    .img1:hover
+    {
+        transform: scale(1.1);
+        transition: 0.5s;
+        
+        box-shadow: 10px 10px 25px aqua;
+    }
+    body
+    {
+        background-image: url(rbg.jpg);
+        background-size: 150%;
+    }
+    .main
+    {
+        width: 800px;
+        height: 900px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        margin: auto;
+        border: 5px solid aqua;
+        box-shadow: 10px 10px 20px rgb(0, 0, 0);
+    
+    }
+    .form
+    {
+        padding: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: xx-large;
+        display: block;
+        margin: auto;
+    }
+    .in1
+    {
+        width: 350px;
+        height: 40px;
+        border-radius: 60px;
+        display: inline;
+        /* background-color: rgb(255, 255, 255); */
+        background-color: rgb(0, 0, 0);
+        border: 3px solid rgb(0, 255, 255);
+        box-shadow: 5px 5px 25px rgb(0, 0, 0);
+        color: aqua;
+    }
+    .in2
+    {
+        width:  750px;
+        height: 40px;
+        border-radius: 60px;
+        /* background-color: rgb(255, 255, 255); */
+        background-color: rgb(0, 0, 0);
+        border: 3px solid rgb(0, 217, 255);
+        box-shadow: 5px 5px 25px rgb(0, 0, 0);
+        color: aqua;
+    }
+    
+    .button
+    {
+        display: block;
+        margin:auto;
+        width: 160px;
+        height: 160px;
+        border-radius: 30px;
+        transition: 0.5s;
+        font-size: xx-large;
+        font-family: cursive;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 3px  solid aqua;
+    }
+    .button:hover
+    {
+        height: 160px;
+        width: 160px;
+        border-radius: 100px;
+        animation: ror 1s;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 3px solid rgb(0, 204, 255);
+        box-shadow: 10px 10px 30px rgb(0, 0, 0);
+    }
+    @keyframes ror {
+        0%{transform: rotate(180deg);border-radius: 40px;}
+        100%{transform: rotate(360deg);border-radius: 100px;}
+    }
+  
+</style>
+<body>
+        <header>
+            <nav class="nav" >
+                <img src="logo1.jpg" alt="LOGO" class="img1">
+                <section style="padding:40px;margin-top: 20px;">
+                   
+                <a href="home.html" class="link">Home</a>
+                <a href="about.html" class="link">About</a>
+                <a href="location.html" class="link">Locatoions</a>
+                <a href="review.html" class="link">Review</a>
+            </section>
+          
+            </nav>
+        </header><br><br><br><br>
+        <main class="main">
+        <form action="home.html" >
+            <div class="form">
+                <br>
+                <label for="name" style="color: rgb(0, 204, 255);"><b><strong>Name:</strong></b></label><br><br><br>
+                <div style="display: flex;gap: 20px;">
+                <input type="text" placeholder="First name" class="in1" required><input type="text" placeholder="Second name" class="in1"></div><br><br>
+                
+               
+                    
+           
+                
+                <label for="name" style="color: rgb(0, 204, 255);"><b><strong>Message:</strong></b></label><br><br>
+                <input type="text" placeholder="Message" class="in2" required><br><br>
+                <label for="name" style="color: rgb(0, 204, 255);"><b><strong>Email:</strong></b></label><br><br>
+                <input type="email" placeholder="Email" class="in2" required><br><br><br><br>
+                <button class="button"><strong>Drop</strong></button>
+        
+            
+            </div></form></main>
+</body>
+</html>
